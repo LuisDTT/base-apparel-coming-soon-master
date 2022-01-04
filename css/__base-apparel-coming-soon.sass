@@ -1,0 +1,86 @@
+.main
+	font-family: 'Josefin Sans', sans-serif
+	min-height: 100vh
+	background: $grayish-gradient
+	font-size: 16px
+
+.header	
+	margin: 2em
+	&__logo
+		height: 25px
+
+.hero-mobile
+	&__img
+		width: 100%
+
+.info
+	padding: 2em 1.7em
+	text-align: center
+	&__title
+		text-transform: uppercase
+		color: $dark-grayish-red
+		letter-spacing: 11px
+		margin-bottom: 0
+		&-accent
+			font-weight: 300
+			color: $desaturated-red
+	&__text
+		margin-top: 8px
+		color: $desaturated-red
+		line-height: 1.4rem
+		font-size: 15px
+	&__form
+		position: relative
+		min-width: 200px
+		transition: all 1s
+		
+		&-email
+			padding: 15px 20px
+			width: 80%
+			border-radius: 30px
+			border: 1px solid $desaturated-red
+			background: transparent
+			opacity: .55
+			outline: none
+			&::placeholder
+				color: $desaturated-red
+		&-icon-error
+			position: absolute
+			padding: 15px 0
+			right: 85px
+			display: none
+		&-text-error
+			margin: 0
+			position: absolute
+			color: $soft-red
+			font-size: 12px
+			padding: 7px 10%
+			opacity: .7
+			display: none
+		&-btn
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			top: 0
+			right: 0
+			height: 100%
+			width: 70px
+			border-radius: 30px
+			border: none
+			background: $dark-gradient
+			box-shadow: 0 10px 20px 0 hsla(0, 36%, 70%, .5)
+			cursor: pointer
+			&:hover
+				background: linear-gradient(135deg, hsl(0, 80%, 92%) 50%, hsl(0, 74%, 82%))
+.hero-desktop
+	display: none
+
+
+.footer
+	position: fixed
+	bottom: 0
+	font-size: 12px
+
+.attribution
+	margin: 0

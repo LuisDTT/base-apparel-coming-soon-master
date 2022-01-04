@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+.main {
+  font-family: "Josefin Sans", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, white 50%, #fff5f5);
+  font-size: 16px; }
+
+.header {
+  margin: 2em; }
+  .header__logo {
+    height: 25px; }
+
+.hero-mobile__img {
+  width: 100%; }
+
+.info {
+  padding: 2em 1.7em;
+  text-align: center; }
+  .info__title {
+    text-transform: uppercase;
+    color: #413a3a;
+    letter-spacing: 11px;
+    margin-bottom: 0; }
+    .info__title-accent {
+      font-weight: 300;
+      color: #ce9797; }
+  .info__text {
+    margin-top: 8px;
+    color: #ce9797;
+    line-height: 1.4rem;
+    font-size: 15px; }
+  .info__form {
+    position: relative;
+    min-width: 200px;
+    transition: all 1s; }
+    .info__form-email {
+      padding: 15px 20px;
+      width: 80%;
+      border-radius: 30px;
+      border: 1px solid #ce9797;
+      background: transparent;
+      opacity: 0.55;
+      outline: none; }
+      .info__form-email::placeholder {
+        color: #ce9797; }
+    .info__form-icon-error {
+      position: absolute;
+      padding: 15px 0;
+      right: 85px;
+      display: none; }
+    .info__form-text-error {
+      margin: 0;
+      position: absolute;
+      color: #f96262;
+      font-size: 12px;
+      padding: 7px 10%;
+      opacity: 0.7;
+      display: none; }
+    .info__form-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 70px;
+      border-radius: 30px;
+      border: none;
+      background: linear-gradient(135deg, #f8bfbf 50%, #ee8c8c);
+      box-shadow: 0 10px 20px 0 rgba(206, 151, 151, 0.5);
+      cursor: pointer; }
+      .info__form-btn:hover {
+        background: linear-gradient(135deg, #fbdada 50%, #f3afaf); }
+
+.hero-desktop {
+  display: none; }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  font-size: 12px; }
+
+.attribution {
+  margin: 0; }
+
+@media screen and (min-width: 1000px) {
+  .main {
+    background: url(images/bg-pattern-desktop.svg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 1fr; }
+
+  .hero-mobile {
+    display: none; }
+
+  .header {
+    margin: 4em 8em; }
+
+  .info {
+    text-align: left;
+    grid-column: 1/2;
+    margin: auto;
+    padding: 0 8em; }
+    .info__title {
+      max-width: min-content;
+      font-size: 4.6rem;
+      margin-top: 0; }
+    .info__text {
+      font-size: 16px;
+      line-height: 1.7rem;
+      margin: 1em 0; }
+    .info__form-email {
+      padding: 20px; }
+    .info__form-icon-error {
+      padding: 20px;
+      right: 95px; }
+    .info__form-text-error {
+      padding: 7px 2em; }
+    .info__form-btn {
+      width: 100px; }
+
+  .hero-desktop {
+    display: block;
+    height: 100vh;
+    grid-column: 2/3;
+    grid-row: 1/3; }
+    .hero-desktop__img {
+      width: 100%;
+      height: 100%; } }
+
+/*# sourceMappingURL=main.css.map */
